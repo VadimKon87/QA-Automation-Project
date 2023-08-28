@@ -4,7 +4,7 @@ exports.config = {
         './test/specs/**/*.js'
     ],
     exclude: [
-        // 'path/to/excluded/files'
+         'path/to/excluded/files'
     ],
     maxInstances: 10,
     headless: true,
@@ -14,21 +14,26 @@ exports.config = {
         browserName: 'chrome',
         acceptInsecureCerts: true,
         'goog:chromeOptions': {
-            args: ['headless', 'disable-gpu']
+            args: [
+                'headless',
+                'disable-gpu'
+                ]
         }
     },
-    {
+     {
         maxInstances: 5,
         browserName: 'firefox',
         acceptInsecureCerts: true,
         'moz:firefoxOptions': {
-            args: ['-headless']
+            args: [
+                '-headless'
+            ]
         }
-    }
+    } 
 ],
     logLevel: 'error',
     bail: 0,
-    baseUrl: 'https://e629ed6b-4969-442b-987e-087e81eb10ca.serverhub.practicum-services.com',
+    baseUrl: 'https://95c30c5b-2f58-4dce-bfea-2d37550da71e.serverhub.tripleten-services.com',
     waitforTimeout: 10000,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
