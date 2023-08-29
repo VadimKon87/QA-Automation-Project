@@ -50,7 +50,6 @@ describe('Create an order', () => {
     it('should write message for driver', async () => {
         await browser.url(`/`);
         await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
-        // browser.pause(3000);
     
         const messageDriver = await $(page.messageDriverField);
         await messageDriver.waitForDisplayed();
@@ -138,7 +137,6 @@ describe('Create an order', () => {
         await orderTaxiButton.click()
 
         const driverInfoModal = await $(page.driverInfoModal);
-        //await driverInfoModal.scrollIntoView();
 
         await browser.waitUntil(
             async () => await driverInfoModal.isExisting(),
@@ -148,28 +146,5 @@ describe('Create an order', () => {
         await expect(driverInfoModal).toBeExisting();
     });         
 })  
-
-
-
-
-/* ********************************************************************************************************** */
-
-/*     it('should open phone number modal', async () => {
-        await browser.url(`/`)
-        await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
-        const phoneNumberButton = await $(page.phoneNumberButton);
-        await phoneNumberButton.waitForDisplayed();
-        await phoneNumberButton.click();
-        const pnoneNumberModal = await $(page.phoneNumberModal);
-        await expect(pnoneNumberModal).toBeExisting();
-    })
-
-    it('should save the phone', async () => {
-        await browser.url(`/`)
-        await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
-        const phoneNumber = helper.getPhoneNumber("+1");
-        await page.submitPhoneNumber(phoneNumber);
-        await expect(await helper.getElementByText(phoneNumber)).toBeExisting();
-    }) */
 
 

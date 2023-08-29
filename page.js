@@ -3,10 +3,8 @@ module.exports = {
     fromField: '#from',
     toField: '#to',
     phoneNumberField: '#phone',
-    //codeField: '#code',
     codeField: '#code',
     creditCardField: '#number',
-    // #code did not work and only full Xpath worked, for other selectors as well
     cardCodeField: "/html/body/div/div/div[2]/div[2]/div[2]/form/div[1]/div[2]/div[2]/div[2]/input",
     messageDriverField: "//input[@id='comment' and @name='comment']",
 

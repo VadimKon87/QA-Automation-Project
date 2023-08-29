@@ -19,11 +19,4 @@ module.exports = {
         console.log("Selector:", selector);
         return await $(selector);
     } 
-
-/*     getElementByText: async function(text) {
-        const selector = `//*[contains(text(), '${text}')]`;
-        console.log("Selector:", selector);
-        return await $(selector); 
-    } */
-    
 };
