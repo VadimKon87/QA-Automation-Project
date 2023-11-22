@@ -1,8 +1,3 @@
-Message to reviewer:
-I know using full xpath is risky and preferable not to use it, but I had problems using shorter paths and I wasted a lot of time on them, so I use short paths where it worked and for the rest I had to use the full paths.
-Also the car search window with timer works strangely (even when I check it manually, it behaves differently), so the last two tests do not pass every time.
-
-**************************************************************************************
 
 This project consists of 9 automated tests covering the full process of ordering a taxi.
 
